@@ -1,0 +1,193 @@
+<!DOCTYPE html><html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="">
+        <meta name="keywords" content="">
+        
+        <title>Mad Slider</title>
+        
+        <link rel="stylesheet" href="./css/mad-slider.min.css" rel="stylesheet">
+
+        <style>
+            body {
+                max-width: 1200px;
+                margin: auto;
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            }
+
+            p, h2, ul, code, pre {
+                padding-left: 1rem;
+                padding-right: 1rem;
+            }
+
+            .mad-slider-counter {
+                text-align: center;
+            }
+
+            ul {
+                padding-left: 2rem;
+                
+            }
+
+            img {
+                width: 100%;
+                margin: auto;
+            }
+
+            .nav {
+                display: flex;
+                gap:2rem;
+                justify-content: center;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Mad Slider Examples</h1>
+
+        <p>Slider code</p>
+        <pre>
+&lt;div class=&quot;mad-slider&quot; data-config='{&quot;slidesPerView&quot;:1, &quot;arrows&quot;:true, &quot;loop&quot;: false}'&gt;
+    &lt;div class=&quot;mad-slides&quot;&gt;
+        &lt;div class=&quot;mad-slide&quot;&gt;
+            &lt;img loading=&quot;lazy&quot; src=&quot;https://picsum.photos/1200/400?random=1&quot; alt=&quot;&quot; title=&quot;&quot;&gt;
+        &lt;/div&gt;
+
+        &lt;div class=&quot;mad-slide&quot;&gt;
+            &lt;img loading=&quot;lazy&quot; src=&quot;https://picsum.photos/1200/400?random=2&quot; alt=&quot;&quot; title=&quot;&quot;&gt;
+        &lt;/div&gt;
+
+        &lt;div class=&quot;mad-slide&quot;&gt;
+            &lt;img loading=&quot;lazy&quot; src=&quot;https://picsum.photos/1200/400?random=3&quot; alt=&quot;&quot; title=&quot;&quot;&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;mad-slider-next&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;mad-slider-prev&quot;&gt;&lt;/div&gt; 
+&lt;/div&gt; 
+        </pre>
+
+        <hr>
+
+        <h2>Example 1</h2>
+        <p>Simple responsive slider:</p>
+        <ul>
+            <li>One slide: <code>"slidesPerView":1</code></li>
+            <li>Default arrows: <code>"arrows":true</code></li>
+            <li>Default counter: <code>"counter":true</code></li>
+            <li>No loop: <code>"loop": false</code></li>
+        </ul>
+
+        <div class="mad-slider example-1" data-config='{"slidesPerView":1, "arrows":true, "loop": false, "counter": true}'>
+            <div class="mad-slides">
+                <div class="mad-slide">
+                    <img loading="lazy" src="https://picsum.photos/1200/400?random=1" alt="" title="">
+                </div>
+
+                <div class="mad-slide">
+                    <img loading="lazy" src="https://picsum.photos/1200/400?random=2" alt="" title="">
+                </div>
+
+                <div class="mad-slide">
+                    <img loading="lazy" src="https://picsum.photos/1200/400?random=3" alt="" title="">
+                </div>
+            </div>
+            <div class="mad-slider-next"></div>
+            <div class="mad-slider-prev"></div> 
+            <div class="mad-slider-counter"></div> 
+        </div>  
+
+        <hr>
+
+        <h2>Example 2</h2>
+        <p>Simple responsive slider:</p>
+        <ul>
+            <li>One slide: <code>"slidesPerView":1</code></li>
+            <li>Custom arrows: <code>"arrows":true, "prev": "#prev", "next": "#next"</code></li>
+            <li>Loop: <code>"loop": true</code></li>
+            <li>Counter: <code>"counter": "#counter"</code></li>
+            <li>Pagination dots: <code>"pagination": true</code></li>
+            <li>Auto height: <code>"height": "auto"</code></li>
+        </ul>
+
+        <div class="mad-slider example-2" data-config='{"slidesPerView":1, "height": "auto", "arrows":true, "prev": "#prev", "next": "#next", "counter": "#counter", "pagination": true, "loop": true}'>
+            <div class="mad-slides">
+                <div class="mad-slide">
+                    <img loading="lazy" height="400" src="https://picsum.photos/1200/400?random=1" alt="" title="">
+                </div>
+
+                <div class="mad-slide">
+                    <img loading="lazy" height="440" src="https://picsum.photos/1200/440?random=2" alt="" title="">
+                </div>
+
+                <div class="mad-slide">
+                    <img loading="lazy" height="360" src="https://picsum.photos/1200/360?random=3" alt="" title="">
+                </div>
+
+
+            </div>
+            <div class="mad-slider-pagination"></div>
+        </div>
+
+        <div class="nav">
+            <div id="prev">Previous Slide</div> 
+            <div id="counter"></div> 
+            <div id="next">Next slide</div>
+        </div>
+        
+
+
+        <h2>Example 3</h2>
+        
+        <ul>
+            <li>Default one slide: <code>"slidesPerView":1</code></li>
+            <li>Breakpoint to custom number of slides: <code>"breakpoints": {"240": 1, "480": 2, "720": 3, "960": 4, "1200": 5}</code></li>
+            <li>Default arrows: <code>"arrows":true</code></li>
+            <li>Loop: <code>"loop": true</code></li>
+        </ul>
+
+        <div class="mad-slider example-3" data-config='{"slidesPerView":1, "arrows":true, "loop": true, "breakpoints": {"240": 1, "480": 2, "720": 3, "960": 4, "1200": 5, "1920": 5}}'>
+            <div class="mad-slides">
+                <div class="mad-slide">
+                    <img loading="lazy" src="https://picsum.photos/240/240?random=1" alt="" title="">
+                </div>
+
+                <div class="mad-slide">
+                    <img loading="lazy" src="https://picsum.photos/240/240?random=2" alt="" title="">
+                </div>
+
+                <div class="mad-slide">
+                    <p>Slide #3 without image</p>
+                </div>
+
+                <div class="mad-slide">
+                    <img loading="lazy" src="https://picsum.photos/240/240?random=3" alt="" title="">
+                </div>
+
+                <div class="mad-slide">
+                    <img loading="lazy" src="https://picsum.photos/240/240?random=4" alt="" title="">
+                </div>
+
+                <div class="mad-slide">
+                    <img loading="lazy" src="https://picsum.photos/240/240?random=5" alt="" title="">
+                </div>
+
+                <div class="mad-slide">
+                    <img loading="lazy" src="https://picsum.photos/240/240?random=6" alt="" title="">
+                </div>
+                
+                <div class="mad-slide">
+                    <img loading="lazy" src="https://picsum.photos/240/240?random=7" alt="" title="">
+                </div>                
+
+            </div>
+            <div class="mad-slider-next" id="next"></div>
+            <div class="mad-slider-prev" id="prev"></div> 
+        </div>  
+
+
+
+        <script defer src="./js/mad-slider.min.js"></script>
+    </body>
+</html>
+        

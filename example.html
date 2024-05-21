@@ -41,6 +41,10 @@
                 gap:2rem;
                 justify-content: center;
             }
+
+            .example-3 .mad-slides {
+                gap:2rem;
+            }
         </style>
     </head>
     <body>
@@ -81,15 +85,15 @@
         <div class="mad-slider example-1" data-config='{"slidesPerView":1, "arrows":true, "loop": false, "counter": true}'>
             <div class="mad-slides">
                 <div class="mad-slide">
-                    <img loading="lazy" src="https://picsum.photos/1200/400?random=1" alt="" title="">
+                    <img loading="lazy" src="https://dummyimage.com/1200x200/d9e5f1/fff" alt="" title="">
                 </div>
 
                 <div class="mad-slide">
-                    <img loading="lazy" src="https://picsum.photos/1200/400?random=2" alt="" title="">
+                    <img loading="lazy" src="https://dummyimage.com/1200x200/b9cfe5/fff" alt="" title="">
                 </div>
 
                 <div class="mad-slide">
-                    <img loading="lazy" src="https://picsum.photos/1200/400?random=3" alt="" title="">
+                    <img loading="lazy" src="https://dummyimage.com/1200x200/00509E/fff" alt="" title="">
                 </div>
             </div>
             <div class="mad-slider-next"></div>
@@ -113,15 +117,15 @@
         <div class="mad-slider example-2" data-config='{"slidesPerView":1, "height": "auto", "arrows":true, "prev": "#prev", "next": "#next", "counter": "#counter", "pagination": true, "loop": true}'>
             <div class="mad-slides">
                 <div class="mad-slide">
-                    <img loading="lazy" height="400" src="https://picsum.photos/1200/400?random=1" alt="" title="">
+                    <img loading="lazy" height="200" src="https://dummyimage.com/1200x200/d9e5f1/fff" alt="" title="">
                 </div>
 
                 <div class="mad-slide">
-                    <img loading="lazy" height="440" src="https://picsum.photos/1200/440?random=2" alt="" title="">
+                    <img loading="lazy" height="240" src="https://dummyimage.com/1200x240/b9cfe5/fff" alt="" title="">
                 </div>
 
                 <div class="mad-slide">
-                    <img loading="lazy" height="360" src="https://picsum.photos/1200/360?random=3" alt="" title="">
+                    <img loading="lazy" height="320" src="https://dummyimage.com/1200x320/00509E/fff" alt="" title="">
                 </div>
 
 
@@ -144,16 +148,18 @@
             <li>Breakpoint to custom number of slides: <code>"breakpoints": {"240": 1, "480": 2, "720": 3, "960": 4, "1200": 5}</code></li>
             <li>Default arrows: <code>"arrows":true</code></li>
             <li>Loop: <code>"loop": true</code></li>
+
+            <li>CSS .mad-slides: <code>"gap": 2rem</code></li>
         </ul>
 
         <div class="mad-slider example-3" data-config='{"slidesPerView":1, "arrows":true, "loop": true, "breakpoints": {"240": 1, "480": 2, "720": 3, "960": 4, "1200": 5, "1920": 5}}'>
             <div class="mad-slides">
                 <div class="mad-slide">
-                    <img loading="lazy" src="https://picsum.photos/240/240?random=1" alt="" title="">
+                    <img loading="lazy" src="https://dummyimage.com/240x240/d9e5f1/fff" alt="" title="">
                 </div>
 
                 <div class="mad-slide">
-                    <img loading="lazy" src="https://picsum.photos/240/240?random=2" alt="" title="">
+                    <img loading="lazy" src="https://dummyimage.com/240x240/b9cfe5/fff" alt="" title="">
                 </div>
 
                 <div class="mad-slide">
@@ -161,30 +167,29 @@
                 </div>
 
                 <div class="mad-slide">
-                    <img loading="lazy" src="https://picsum.photos/240/240?random=3" alt="" title="">
+                    <img loading="lazy" src="https://dummyimage.com/240x240/00509E/fff" alt="" title="">
                 </div>
 
                 <div class="mad-slide">
-                    <img loading="lazy" src="https://picsum.photos/240/240?random=4" alt="" title="">
+                    <img loading="lazy" src="https://dummyimage.com/240x240/01204C/fff" alt="" title="">
                 </div>
 
                 <div class="mad-slide">
-                    <img loading="lazy" src="https://picsum.photos/240/240?random=5" alt="" title="">
+                    <img loading="lazy" src="https://dummyimage.com/240x240/b9cfe5/fff" alt="" title="">
                 </div>
 
                 <div class="mad-slide">
-                    <img loading="lazy" src="https://picsum.photos/240/240?random=6" alt="" title="">
+                    <img loading="lazy" src="https://dummyimage.com/240x240/00509E/fff" alt="" title="">
                 </div>
                 
                 <div class="mad-slide">
-                    <img loading="lazy" src="https://picsum.photos/240/240?random=7" alt="" title="">
+                    <img loading="lazy" src="https://dummyimage.com/240x240/01204C/fff" alt="" title="">
                 </div>                
 
             </div>
-            <div class="mad-slider-next" id="next"></div>
-            <div class="mad-slider-prev" id="prev"></div> 
+            <div class="mad-slider-next"></div>
+            <div class="mad-slider-prev"></div> 
         </div>  
-
 
 
         <script defer src="./js/mad-slider.min.js"></script>
